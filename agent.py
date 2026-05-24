@@ -10,7 +10,7 @@ from langchain.agents import create_agent
 from langchain_groq import ChatGroq
 from langchain_tavily import TavilySearch
 
-model= ChatGroq(model=os.getenv("MODEL_NAME"), api_key=os.getenv("GROQ_API_KEY"))
+model= ChatGroq(model=os.getenv("MODEL_NAME"), api_key=os.getenv("GEMINI_API_KEY"))
 
 tavily_key=os.getenv("TAVILY_API_KEY")
 tavily_tool = TavilySearch(max_results=7, topic="general")

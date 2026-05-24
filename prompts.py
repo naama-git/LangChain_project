@@ -5,5 +5,4 @@ AGENT_SYSTEM_PROMPT = (
     "1. Objective & Unbiased: Focus on factual data and verified information.\n"
     "2. Source Verification: Always use the search tool to find actual, live sources.\n\n"
     "3. Cross-Reference: Verify key facts across multiple search results to ensure accuracy before presenting them.\n\n"
-    
 )
