@@ -7,10 +7,10 @@ from netfree_unstrict_ssl import unstrict_ssl
 unstrict_ssl()
 
 from langchain.agents import create_agent
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_tavily import TavilySearch
 
-model= ChatGroq(model=os.getenv("MODEL_NAME"), api_key=os.getenv("GEMINI_API_KEY"))
+model= ChatGoogleGenerativeAI(model=os.getenv("GEMINI_MODEL_NAME"), google_api_key=os.getenv("GEMINI_API_KEY"))
 
 tavily_key=os.getenv("TAVILY_API_KEY")
 tavily_tool = TavilySearch(max_results=7, topic="general")
@@ -40,7 +40,8 @@ async def query_loop():
             }
         )
 
-        print("\nAgent Response:", result["choices"][0]["message"]["content"])
+        last_message = result["messages"][-1]
+        print("\nAgent Response:", last_message.content)
 
 
 if __name__ == "__main__":
