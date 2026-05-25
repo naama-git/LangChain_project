@@ -1,8 +1,8 @@
-# LangChain Research Agent
+# 🤖 LangChain Research Agent
 
 A compact, source-aware question-answering Agent built for local development and prompt tuning. It accepts user queries, gathers candidate sources, and returns concise answers with cited references
 
-## Getting Started
+## 🧨 Getting Started
 
 Follow these steps to run the project locally on Windows.
 
@@ -65,14 +65,14 @@ Follow these steps to run the project locally on Windows.
     uv run main.py -- cli
     ```
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Language**: Python 3.14+
 - **UI**: Gradio-based interface
 - **LLM / agent framework**: LangChain with Gemini support via `langchain-google-genai`
 - **Entry points**: `main.py`, prompt templates in `prompts.py`
 
-## Project Layout / Where to Look
+## 📑 Project Layout
 
 - `main.py` — local runner / CLI entrypoint
 - `agent.py` — agent orchestration logic
@@ -82,7 +82,7 @@ Follow these steps to run the project locally on Windows.
 
 ---
 
-## Prompt Examples
+## ✨ Prompt Examples
 
 <details>
 <summary><b>Query: What does the acronym "URL" stand for in web addresses?</b></summary>
