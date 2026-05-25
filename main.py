@@ -1,10 +1,9 @@
 import sys
 import asyncio
-import subprocess
 from app import demo
+from cli import query_loop
 
 def run_cli():
-    from agent import query_loop
     asyncio.run(query_loop())
 
 
