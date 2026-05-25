@@ -2,7 +2,7 @@
 
 A compact, source-aware question-answering Agent built for local development and prompt tuning. It accepts user queries, gathers candidate sources, and returns concise answers with cited references 
 
-## Getting Started / Installation
+## Getting Started
 
 Follow these steps to run the project locally on Windows.
 
