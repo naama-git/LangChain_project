@@ -150,3 +150,39 @@ Sources:
 * https://www.amazon.com/Basic-Math-Skills-Grade-2/dp/1557998973
 * https://southbend.iu.edu/students/academic-success-programs/academic-centers-for-excellence/docs/Basic%20Math%20Review%20Card.pdf
 </details>
+
+<details>
+<summary><b>Query: Explain me the CI/CD pipeline</b></summary>
+
+**Response**:
+  Here are the sources I found. Which ones should I include in the summary?
+    1. What is a CI/CD pipeline? — https://about.gitlab.com/topics/ci-cd/cicd-pipeline
+    2. Part 14: CI/CD Pipelines Explained | by Adekola Olawale | Medium — https://medium.com/@Adekola_Olawale/ part-14-ci-cd-pipelines-explained-1e355058fad4
+    3. What Are CI/CD And The CI/CD Pipeline? | IBM — https://www.ibm.com/think/topics/ci-cd-pipeline
+    4. CI/CD Pipeline Explained: Stages, Tools & Examples (2026) — https://www.netcomlearning.com/blog/ci-cd-pipeline
+    5. CI/CD Pipeline Explained in 5 Minutes — https://www.youtube.com/watch?v=N_Wuej70uA4
+
+**Your selection**: all of them
+
+A CI/CD pipeline is an automated workflow that streamlines the software delivery process, moving code from development to production through a series of stages. By replacing manual processes with automation, it helps development teams release software updates more frequently, reliably, and with fewer errors.
+
+The acronym stands for:
+*   **Continuous Integration (CI):** Developers frequently merge their code changes into a central repository, where automated builds and tests are triggered. This allows for early detection of integration issues.
+*   **Continuous Delivery (CD):** Once the code passes the CI stage, it is automatically prepared and released to a testing or staging environment, ensuring it is always in a deployable state.
+*   **Continuous Deployment (CD):** An extension of continuous delivery where every change that passes the automated tests is automatically deployed directly to the production environment, without manual intervention.
+
+### Key Stages of a Pipeline:
+1.  **Source:** The stage where code changes are committed to a version control system (like Git), triggering the pipeline.
+2.  **Build:** The code is compiled and packaged into a runnable product.
+3.  **Test:** Automated tests run against the build to validate functionality, performance, and security.
+4.  **Deploy:** Once validated, the application is moved to the target environment (staging or production).
+
+By standardizing these steps, CI/CD pipelines provide consistent feedback to developers and ensure that software releases are predictable and scalable.
+
+### Sources
+*   [What is a CI/CD pipeline?](https://about.gitlab.com/topics/ci-cd/cicd-pipeline)
+*   [Part 14: CI/CD Pipelines Explained | by Adekola Olawale | Medium](https://medium.com/@Adekola_Olawale/part-14-ci-cd-pipelines-explained-1e355058fad4)
+*   [What Are CI/CD And The CI/CD Pipeline? | IBM](https://www.ibm.com/think/topics/ci-cd-pipeline)
+*   [CI/CD Pipeline Explained: Stages, Tools & Examples (2026)](https://www.netcomlearning.com/blog/ci-cd-pipeline)
+*   [CI/CD Pipeline Explained in 5 Minutes](https://www.youtube.com/watch?v=N_Wuej70uA4)
+</details>
