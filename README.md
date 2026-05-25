@@ -70,7 +70,7 @@ Follow these steps to run the project locally on Windows.
 - **Language**: Python 3.14+
 - **UI**: Gradio-based interface
 - **LLM / agent framework**: LangChain with Gemini support via `langchain-google-genai`
-- **Entry points**: `main.py`, `agent.py`, prompt templates in `prompts.py`
+- **Entry points**: `main.py`, prompt templates in `prompts.py`
 
 ## Project Layout / Where to Look
 
@@ -78,6 +78,7 @@ Follow these steps to run the project locally on Windows.
 - `agent.py` — agent orchestration logic
 - `prompts.py` — prompt templates and instructions
 - `app.py` — user interface management
+- `cli.py` — cli chat management
 
 ---
 
