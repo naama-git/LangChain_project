@@ -24,9 +24,7 @@ async def chat(message, history):
 
     session = sessions.get(THREAD_ID)
 
-    # =========================
-    # מצב רגיל - user שואל שאלה חדשה
-    # =========================
+    # a new conversation
 
     if not session:
 
@@ -43,9 +41,6 @@ async def chat(message, history):
             version="v2",
         )
 
-    # =========================
-    # מצב HITL - user עונה לinterrupt
-    # =========================
 
     else:
 
@@ -68,9 +63,8 @@ async def chat(message, history):
 
         sessions.pop(THREAD_ID)
 
-    # =========================
-    # אם יש interrupt
-    # =========================
+
+    # interrupt
 
     if result.interrupts:
 
@@ -93,10 +87,7 @@ async def chat(message, history):
         return (
             f"{args['question']}\n\n{sources_text}"
         )
-
-    # =========================
-    # תשובה רגילה
-    # =========================
+    
 
     content = result["messages"][-1].content
 
@@ -118,7 +109,6 @@ with gr.Blocks(css=css) as demo:
 
         gr.ChatInterface(
             fn=chat,
-            # chatbot=gr.Chatbot(type="messages"),
             title="Research Agent",
         )
 
