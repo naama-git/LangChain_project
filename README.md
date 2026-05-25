@@ -37,11 +37,11 @@ Follow these steps to run the project locally on Windows.
 
 4. Configure environment variables
 
-    Copy the example environment file and populate it with your credentials:
+    Copy the [example environment file](./.env.example) and populate it with your credentials:
 
     ```bash
     cp .env.example .env
-    # then edit .env and add your API keys (OPENAI_API_KEY etc.)
+    # then edit .env and add your API keys
     ```
 
     If you're on Windows and don't have `cp`, you can copy the file in Explorer or use PowerShell:
