@@ -1,6 +1,6 @@
-# LangChain Agent
+# LangChain Research Agent
 
-A compact, source-aware question-answering Agent built for local development and prompt tuning. It accepts user queries, gathers candidate sources, and returns concise answers with cited references 
+A compact, source-aware question-answering Agent built for local development and prompt tuning. It accepts user queries, gathers candidate sources, and returns concise answers with cited references
 
 ## Getting Started
 
@@ -41,10 +41,10 @@ Follow these steps to run the project locally on Windows.
 
     ```bash
     cp .env.example .env
-    # then edit .env and add your API keys
+    # then edit .env and add your keys
     ```
 
-    If you're on Windows and don't have `cp`, you can copy the file in Explorer or use PowerShell:
+    If you're on Windows and don't have `cp`, use PowerShell:
 
     ```powershell
     Copy-Item .env.example .env
@@ -53,21 +53,23 @@ Follow these steps to run the project locally on Windows.
 
 5. Run the agent
 
-    Start the project using `uv` (recommended) which will use the project's run scripts:
+    Start the project using `uv` with the script path:
 
     ```bash
-    uv run
-    # fallback (if you prefer):
-    python main.py
-    # or
-    python agent.py
+    uv run main.py
+    ```
+
+    If you want to launch only the CLI mode, use:
+
+    ```bash
+    uv run main.py -- cli
     ```
 
 ## Tech Stack
 
-- **Language**: Python 3.10+
-- **LLM Provider**: Gemini-compatible APIs (set via `GEMINI_API_KEY`) — easily swappable with other providers
-- **Framework**: LangChain
+- **Language**: Python 3.14+
+- **UI**: Gradio-based interface
+- **LLM / agent framework**: LangChain with Gemini support via `langchain-google-genai`
 - **Entry points**: `main.py`, `agent.py`, prompt templates in `prompts.py`
 
 ## Project Layout / Where to Look
@@ -75,7 +77,7 @@ Follow these steps to run the project locally on Windows.
 - `main.py` — local runner / CLI entrypoint
 - `agent.py` — agent orchestration logic
 - `prompts.py` — prompt templates and instructions
-- `pyproject.toml` — package metadata and dependency spec
+- `app.py` — user interface management
 
 ---
 
